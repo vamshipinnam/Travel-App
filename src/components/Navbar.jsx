@@ -36,7 +36,7 @@ const Navbar = () => {
             {/* Mobile Menu DropDown */}
             <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-slate-300/90 px-10 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-teal-100/90 px-10 py-7 flex flex-col'}>
                 <ul>
-                    <h1 className='text-black'>TRAVEL</h1>
+                    <h1 className='w-[300px] mt-5 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif text-xl text-white'>ACROSS THE WORLD</h1>
                     <li className='border-b text-black'>Home</li>
                     <li className='border-b text-black'>Destinations</li>
                     <li className='border-b text-black'>Travel</li>
