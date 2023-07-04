@@ -18,10 +18,10 @@ const MainPage = () => {
                         <h2>First Class Travel</h2>
                         <h2>Top Locations in India</h2>
                     </div> */}
-                    <form className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1
+                    <form className="flex justify-between items-center w-[300px] sm:w-[600px] mx-auto w-full border p-1
                     rounded-md text-black bg-white">
                         <div>
-                            <input className="bg-transparent w-[200px] sm:w-[400px] focus:outline-none" 
+                            <input className="bg-transparent w-[100px] sm:w-[400px] focus:outline-none" 
                             type="text" placeholder="Search Destinations" />
                         </div>
                         <div>
