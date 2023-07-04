@@ -26,7 +26,7 @@
     }
 
     h1 {
-        @apply text-3xl md:text-4xl font-bold
+        @apply  text-xl sm:text-3xl md:text-4xl sm:font-bold
     }
 
     h2 {

@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className='flex w-full justify-between items-center h-20 px-10 absolute z-10'>
         <div>
-            <h1 className="md:max-w-[300px] mt-10 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif md:text-4xl text-white">
+            <h1 className="sm:max-w-[300px] mt-10 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif text-xl md:text-4xl text-white">
                 ACROSS THE WORLD
             </h1>
         </div>
