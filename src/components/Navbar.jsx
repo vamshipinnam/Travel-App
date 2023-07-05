@@ -4,6 +4,7 @@ import {BiSearch} from 'react-icons/bi';
 import {AiOutlineClose} from  'react-icons/ai'
 import {HiOutlineMenuAlt4} from  'react-icons/hi'
 import {FaFacebook, FaInstagram, FaTwitter, FaYoutube} from "react-icons/fa";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -13,11 +14,12 @@ const Navbar = () => {
   return (
     <div className='flex w-full justify-between items-center h-20 px-10 absolute z-10'>
         <div>
-            <h1 className="sm:max-w-[300px] mt-10 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif text-xl md:text-4xl text-white">
+            {/* <h1 className="sm:max-w-[300px] mt-10 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif text-xl md:text-4xl text-white">
                 ACROSS THE WORLD
-            </h1>
+            </h1> */}
+            <img src={Logo} className='w-[100px] mt-1 sm:w-[120px] sm:mt-1 lg:w-[200px] lg:h-[100px] lg:mt-8'/>
         </div>
-            <ul className='hidden md:flex className=" text-center bg-stone-100/50 rounded-md '>
+            <ul className='hidden md:flex md:w-[365px] lg:w-[450px] md:ml-[10px] xl:mr-[50px] text-center bg-stone-100/50 rounded-md '>
                 <li>Home</li>
                 <li>Destinations</li>
                 <li>Travel</li>
@@ -34,17 +36,17 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu DropDown */}
-            <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-slate-300/90 px-10 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-teal-100/90 px-10 py-7 flex flex-col'}>
+            <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-slate-300/100 px-10 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-teal-100/90 px-10 py-7 flex flex-col'}>
                 <ul>
-                    <h1 className='w-[300px] mt-5 mb-1 text-center bg-stone-950/50 border p-1 rounded-md font-serif text-xl text-white'>ACROSS THE WORLD</h1>
+                    <img src={Logo} className='w-[100px] mb-1'/>
                     <li className='border-b text-black'>Home</li>
                     <li className='border-b text-black'>Destinations</li>
                     <li className='border-b text-black'>Travel</li>
                     <li className='border-b text-black'>View</li>
                     <li className='border-b text-black'>Book</li>
                     <div className='flex flex-col'>
-                        <button className='my-6'>Search</button>
-                        <button>Account</button>
+                        <button className="btn">Search</button>
+                        <button className='btn'>Account</button>
                     </div>
                     <div className='flex justify-between my-6'>
                         <FaFacebook className="icon"/>

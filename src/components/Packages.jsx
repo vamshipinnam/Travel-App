@@ -77,7 +77,7 @@ const PackageCard = () => {
         Exclusive Packages with up to 10% off certain packages
       </div>
       <div className="grid gap-4 p-4 bg-white shadow rounded-sm">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4  md:grid-cols-2">
           {packages.map((pkg) => (
             <div key={pkg.name} className="bg-white border-1 shadow-sm hover:shadow-md rounded-md">
               <div>
